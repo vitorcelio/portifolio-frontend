@@ -1,1 +1,139 @@
-/* You can add global styles to this file, and also import other style files */
+.bg-black{
+    background-color: #010514 !important;
+}
+
+.bg-dark{
+    background-color: #0a1c2b !important;
+}
+
+.font-press-start {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+}
+
+h5 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px !important;
+}
+
+.font-pp {
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.font-p {
+    font-size: 12px;
+}
+
+.font-m {
+    font-size: 15px;
+}
+
+.text-press-start {
+    background: linear-gradient(to bottom, #005cac, #9ec4e5 50%, #d9d9d9 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text-press-start2 {
+    background: linear-gradient(to bottom, #ff9421, #f7f371, #ff9421);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.press-button img {
+    opacity: 0;
+}
+
+.press-button:hover img {
+    opacity: 1;
+}
+
+.press-button h3 {
+    font-family: 'Press Start 2P', cursive;
+    color: #a8a8a8;
+}
+
+.press-button:hover h3 {
+    background: linear-gradient(to bottom, #ff9421, #f7f371, #ff9421);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.press-button h5 {
+    color: #a8a8a8;
+}
+
+.press-button:hover h5 {
+    background: linear-gradient(to bottom, #2197ff, #6289ff, #2197ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.press-background {
+    background: linear-gradient(to bottom, #00f8a6, #139262, #78c18b);
+    color: white;
+}
+
+.fundo-pixel {
+    background-image: url(/assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.botao {
+    background-image: url(/assets/img/botao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.botao:active {
+    outline: none;
+}
+
+.input-padrao {
+    background-color: transparent;
+    border-radius: 0px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: white;
+}
+
+.input-padrao:hover, .input-padrao:focus {
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.post-image {
+    padding: 150px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.botao-likes:hover{
+    cursor: pointer;
+    color: white;
+    transform: scale(1.2);
+}

@@ -1,0 +1,42 @@
+<div class="pt-2 pb-5 bg-black">
+    <div class="container-fluid">
+        <h2 class="text-center text-press-start2 font-press-start pt-5 pb-2">Contato</h2>
+        <div class="row">
+            <div class="col-12 col-sm-2 col-md-3"></div>
+            <form class="col-12 col-sm-8 col-md-6" #formContato="ngForm">
+                <div class="mb-3">
+                    <label for="nome" class="form-label font-press-start text-white">Nome <span
+                            class="text-danger" *ngIf="nome.invalid">*</span> </label>
+                    <input type="text" class="form-control input-padrao bg-dark" id="nome" name="nome" #nome="ngModel"
+                        [(ngModel)]="contato.nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label font-press-start text-white">Email <span
+                        class="text-danger" *ngIf="email.invalid">*</span> </label>
+                    <input type="email" class="form-control input-padrao bg-dark" id="email" name="email"
+                        #email="ngModel" [(ngModel)]="contato.email" placeholder="Seu melhor email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label font-press-start text-white">Mensagem <span
+                        class="text-danger" *ngIf="mensagem.invalid">*</span> </label>
+                    <textarea class="form-control input-padrao bg-dark" name="mensagem" id="mensagem" #mensagem="ngModel" [(ngModel)]="contato.mensagem" cols="30"
+                        rows="10" placeholder="Digite sua mensagem para mim" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label font-press-start text-white">Assunto <span
+                        class="text-danger" *ngIf="assunto.invalid">*</span> </label>
+                    <select class="form-select input-padrao bg-dark" name="assunto" id="assunto" #assunto="ngModel" [(ngModel)]="contato.assunto" required>
+                        <option value="INFORMACAO">Informação</option>
+                        <option value="NOVOPROJETO">Novo projeto</option>
+                        <option value="AGRADECIMENTO">Agradecimento</option>
+                    </select>
+                </div>
+                <div class="gap-2 d-md-flex justify-content-md-end mt-4 pb-4">
+                    <div class="form-control bg-transparent border-0"></div>
+                    <button [disabled]="formContato.invalid" (click)="enviarMensagem()" class="btn botao input-padrao" type="button">Enviar mensagem</button>
+                </div>
+            </form>
+            <div class="col-12 col-sm-2 col-md-3"></div>
+        </div>
+    </div>
+</div>
